@@ -60,6 +60,34 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "amogus"
+    },
+    {
+      "name": "DynamiteRightclicked",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dynamite",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dynamite"
     }
   ],
   "variable_elements": [],
@@ -67,6 +95,7 @@
   "language_map": {
     "en_us": {
       "item.mineluxprod.amogus_spawn_egg": "Glogwa Amogus Spawn Egg",
+      "item.mineluxprod.dynamite": "Dynamite",
       "entity.mineluxprod.amogus": "Glogwa Amogus",
       "itemGroup.tabminelux": "Minelux"
     }
