@@ -1,5 +1,17 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Testprod",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testprod",
+      "metadata": {
+        "dependencies": []
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
