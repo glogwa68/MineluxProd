@@ -45,7 +45,7 @@ public class DynamiteRightclickedProcedure {
 							entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20, entity.getLook(1f).z * 20),
 							RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()),
 					new ItemStack(DynamiteItem.block));
-			entityToSpawn.setPickupDelay((int) 99999999999999);
+			entityToSpawn.setPickupDelay((int) 50000);
 			world.addEntity(entityToSpawn);
 		}
 		new Object() {

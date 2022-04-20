@@ -65,7 +65,7 @@
       "name": "DynamiteRightclicked",
       "type": "procedure",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "dynamite_rightclicked",
       "metadata": {
@@ -73,18 +73,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
