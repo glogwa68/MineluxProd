@@ -10,7 +10,7 @@
     "creativeTab": {
       "value": "CUSTOM:Minelux"
     },
-    "stackSize": 64,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -28,7 +28,7 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 16,
     "onRightClickedInAir": {
       "name": "DynamiteRightclicked"
     },
