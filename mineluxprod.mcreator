@@ -52,12 +52,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Amogus",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amogus"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.mineluxprod.amogus_spawn_egg": "Glogwa Amogus Spawn Egg",
+      "entity.mineluxprod.amogus": "Glogwa Amogus",
       "itemGroup.tabminelux": "Minelux"
     }
   },
