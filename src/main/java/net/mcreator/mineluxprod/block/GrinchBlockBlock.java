@@ -1,18 +1,33 @@
 
 package net.mcreator.mineluxprod.block;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.loot.LootContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
-import net.minecraft.util.SoundEvent;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+
+import net.mcreator.mineluxprod.itemgroup.MineluxItemGroup;
+import net.mcreator.mineluxprod.item.DynamiteItem;
+import net.mcreator.mineluxprod.MineluxprodModElements;
+
+import java.util.List;
+import java.util.Collections;
 
 @MineluxprodModElements.ModElement.Tag
 public class GrinchBlockBlock extends MineluxprodModElements.ModElement {
-
 	@ObjectHolder("mineluxprod:grinch_block")
 	public static final Block block = null;
 
 	public GrinchBlockBlock(MineluxprodModElements instance) {
 		super(instance, 6);
-
 	}
 
 	@Override
@@ -22,10 +37,8 @@ public class GrinchBlockBlock extends MineluxprodModElements.ModElement {
 	}
 
 	public static class CustomBlock extends Block {
-
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
-
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
 			setRegistryName("grinch_block");
 		}
 
@@ -36,13 +49,10 @@ public class GrinchBlockBlock extends MineluxprodModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(DynamiteItem.block));
 		}
-
 	}
-
 }

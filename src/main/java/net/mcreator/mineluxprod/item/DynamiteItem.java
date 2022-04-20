@@ -37,7 +37,7 @@ public class DynamiteItem extends MineluxprodModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(MineluxItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(MineluxItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("dynamite");
 		}
 
@@ -64,10 +64,9 @@ public class DynamiteItem extends MineluxprodModElements.ModElement {
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
 
-			DynamiteRightclickedProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			DynamiteRightclickedProcedure
+					.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return ar;
 		}
 	}

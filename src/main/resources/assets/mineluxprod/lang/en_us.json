@@ -3,5 +3,6 @@
   "item.mineluxprod.dynamite": "Dynamite",
   "block.mineluxprod.grinch_block": "Grinch Block",
   "entity.mineluxprod.amogus": "Glogwa Amogus",
-  "itemGroup.tabminelux": "Minelux"
+  "itemGroup.tabminelux": "Minelux",
+  "item.mineluxprod.grinched_dimension": "Grinched Fired"
 }

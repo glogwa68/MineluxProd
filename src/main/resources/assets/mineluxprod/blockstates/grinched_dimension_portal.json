@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "mineluxprod:block/grinched_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "mineluxprod:block/grinched_dimension_portal_ns"
+    }
+  }
+}

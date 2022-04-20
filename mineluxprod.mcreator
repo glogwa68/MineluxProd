@@ -65,7 +65,7 @@
       "name": "DynamiteRightclicked",
       "type": "procedure",
       "sortid": 5,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "dynamite_rightclicked",
       "metadata": {
@@ -116,6 +116,17 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "grinch_block"
+    },
+    {
+      "name": "GrinchedDimension",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinched_dimension",
+      "metadata": {
+        "ep": true
+      }
     }
   ],
   "variable_elements": [],
@@ -126,7 +137,8 @@
       "item.mineluxprod.dynamite": "Dynamite",
       "block.mineluxprod.grinch_block": "Grinch Block",
       "entity.mineluxprod.amogus": "Glogwa Amogus",
-      "itemGroup.tabminelux": "Minelux"
+      "itemGroup.tabminelux": "Minelux",
+      "item.mineluxprod.grinched_dimension": "Grinched Fired"
     }
   },
   "foldersRoot": {
