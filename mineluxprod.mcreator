@@ -27,12 +27,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Minelux",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minelux"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "itemGroup.tabminelux": "Minelux"
+    }
   },
   "foldersRoot": {
     "name": "~",
