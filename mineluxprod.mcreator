@@ -35,6 +35,23 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "minelux"
+    },
+    {
+      "name": "Explode",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explode",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
