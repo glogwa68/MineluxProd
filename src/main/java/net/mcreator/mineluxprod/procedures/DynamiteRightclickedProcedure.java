@@ -94,13 +94,13 @@ public class DynamiteRightclickedProcedure {
 				if (world instanceof World && !((World) world).isRemote) {
 					((World) world).createExplosion(null,
 							(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20, entity.getLook(1f).z * 20),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 3, entity.getLook(1f).y * 3, entity.getLook(1f).z * 3),
 									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()),
 							(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20, entity.getLook(1f).z * 20),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 3, entity.getLook(1f).y * 3, entity.getLook(1f).z * 3),
 									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()),
 							(int) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 20, entity.getLook(1f).y * 20, entity.getLook(1f).z * 20),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 3, entity.getLook(1f).y * 3, entity.getLook(1f).z * 3),
 									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()),
 							(float) 2, Explosion.Mode.BREAK);
 				}
